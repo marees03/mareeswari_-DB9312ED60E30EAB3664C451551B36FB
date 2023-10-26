@@ -1,0 +1,14 @@
+def linear_search_product(product_list, target_product):
+    for i, product in enumerate(product_list):
+        if product == target_product:
+            return i  # Return the index of the target product if found
+    return -1  # Return -1 if the target product is not in the list
+products = ["apple", "banana", "orange", "grape", "pear"]
+target_product = "orange"
+
+result = linear_search_product(products, target_product)
+
+if result != -1:
+    print(f"{target_product} found at index {result}")
+else:
+    print(f"{target_product} not found in the list")
